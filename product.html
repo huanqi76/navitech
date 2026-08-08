@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product specification | Navitech</title>
+  <meta name="description" content="Full specification sheet: dimensions, note capacity, cassettes, functions, connectivity, compliance, and tamper security.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-page="products">
+  <header id="site-nav"></header>
+
+  <main>
+    <!-- Header + key facts rendered from product data -->
+    <div id="detail-hero"></div>
+
+    <!-- Overview column: visual, key facts, functions, security -->
+    <section class="section section--paper">
+      <div class="container">
+        <div class="product-detail">
+          <aside>
+            <div class="product-detail__visual" id="detail-visual"></div>
+            <p class="kicker mt-4 mb-0" data-i18n="detail.photoNote">Photo pending</p>
+          </aside>
+          <div class="product-detail__info">
+            <div class="detail-facts mb-5" id="detail-facts"></div>
+            <div id="detail-overview"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full specification sheet -->
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker" data-i18n="detail.specsKicker">Specification sheet</span>
+          <h2 data-i18n="detail.specsH2">Mechanical and operational specifications</h2>
+          <p data-i18n="detail.specsP">Dimensions, note handling, compliance, and tamper security as submitted for procurement review.</p>
+        </div>
+        <div id="detail-specs"></div>
+      </div>
+    </section>
+
+    <!-- Reserved for the interactive dimension-check feature (later pass).
+         Currently renders a static elevation with dimension callouts. -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker" data-i18n="detail.dimKicker">Dimensions &amp; clearances</span>
+          <h2 data-i18n="detail.dimH2">Footprint and installation envelope</h2>
+        </div>
+        <div id="detail-dimensions"></div>
+      </div>
+    </section>
+
+    <!-- Related models -->
+    <section class="section section--dark" style="padding-top:0;" id="detail-related">
+      <div class="container">
+        <span class="kicker" data-i18n="detail.relKicker">Other models</span>
+        <h2 class="mb-5" data-i18n="detail.relH2">The rest of the range</h2>
+        <div class="product-grid" id="detail-related-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/product-detail.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    I18N.init();
+  </script>
+</body>
+</html>

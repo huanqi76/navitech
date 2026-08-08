@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Navitech</title>
+  <meta name="description" content="Cash deposit machines: lobby deposit, through-the-wall, compact, and cash-center models with full specifications.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-page="products">
+  <header id="site-nav"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><span data-i18n="products.breadcrumb">Products</span></nav>
+        <h1 class="mb-1" data-i18n="products.h1">Product catalog</h1>
+        <p class="lede" data-i18n="products.lede">
+          Deposit machines for the placements a bank network uses: branch lobbies,
+          24-hour wall envelopes, compact retail sites, and high-throughput cash centers.
+          Filter by configuration, or open a unit for the full specification sheet.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container">
+        <div class="filters" id="product-filters" role="group" aria-label="Filter products by type"></div>
+        <p class="kicker mb-5" id="product-count"></p>
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <div class="cta-band__inner">
+          <a class="btn btn--primary" href="contact.html" data-i18n="products.cta.btn">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    I18N.init();
+  </script>
+</body>
+</html>

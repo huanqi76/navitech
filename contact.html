@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact / Request a Quote | Navitech</title>
+  <meta name="description" content="Request a quote for cash deposit machines and service contracts. Contact the Navitech sales and engineering team.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-page="contact">
+  <header id="site-nav"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><span data-i18n="contact.breadcrumb">Contact</span></nav>
+        <h1 class="mb-1" data-i18n="contact.h1">Request a quote</h1>
+        <p class="lede" data-i18n="contact.lede">
+          Tell us who you are and what you need, and we will respond with a hardware and service
+          proposal: specifications, rollout plan, and service levels.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container">
+        <div>
+          <div class="form-success mb-5" id="form-success" role="status">
+            <p class="mb-2"><strong data-i18n="form.success.t">Request received.</strong></p>
+            <p class="mb-0" data-i18n="form.success.d">This is a static-site placeholder. Connect the form to your endpoint in a later pass. A sales engineer will follow up.</p>
+          </div>
+
+          <form id="quote-form" novalidate>
+            <div class="form">
+              <div class="form-field form-field--full">
+                <label for="q-institution" data-i18n="form.institution">Institution</label>
+                <input type="text" id="q-institution" name="institution" autocomplete="organization" required>
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="q-name" data-i18n="form.name">Contact name</label>
+                <input type="text" id="q-name" name="name" autocomplete="name" required>
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="q-email" data-i18n="form.email">Email</label>
+                <input type="email" id="q-email" name="email" autocomplete="email" required>
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="q-phone" data-i18n="form.phone">Phone</label>
+                <input type="tel" id="q-phone" name="phone" autocomplete="tel">
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="q-country" data-i18n="form.country">Country</label>
+                <input type="text" id="q-country" name="country" autocomplete="country-name" required>
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="q-msg" data-i18n="form.msg">What you need</label>
+                <textarea id="q-msg" name="message" data-i18n-placeholder="form.msg.ph" placeholder="Describe what you need: machines, quantities, service coverage, timeline…" required></textarea>
+                <span class="form-field__error" aria-live="polite"></span>
+              </div>
+              <div class="form-field form-field--full">
+                <button class="btn btn--primary" type="submit" data-i18n="form.submit">Send request</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    I18N.init();
+  </script>
+</body>
+</html>
