@@ -40,6 +40,7 @@
       name: "Fingerprint Safedoor Lock Solution",
       intro: "Biometric access control for cash rooms, vaults, and safedoor entries.",
       image: "assets/img/solutions/safedoor-lock.png",
+      modalImage: "assets/img/solutions/lock-large.png",
       detail: "Access control for the rooms where cash is handled. Fingerprint and dynamic-password locking on safedoors, with audit trails and remote authorization from the operations desk.",
       features: [
         "Fingerprint and dynamic-password access for safedoor entries",
@@ -125,12 +126,12 @@
   function openModal(s) {
     var modal = document.getElementById("solution-modal");
     if (!modal) return;
-    document.getElementById("solution-modal-kicker").textContent = s.num + " / " + t("solutions.modal.kicker");
+    document.getElementById("solution-modal-kicker").textContent = s.num;
     document.getElementById("solution-modal-title").textContent = L(s, "name");
     document.getElementById("solution-modal-detail").textContent = L(s, "detail");
 
     var visual = modal.querySelector(".modal__visual img");
-    visual.src = s.image;
+    visual.src = s.modalImage || s.image;
     visual.onerror = function () {
       this.onerror = null;
       this.src = FALLBACK_IMAGE;
@@ -139,11 +140,13 @@
 
     var list = document.getElementById("solution-modal-features");
     list.innerHTML = "";
+    var ul = document.createElement("ul");
     L(s, "features").forEach(function (f) {
       var li = document.createElement("li");
       li.textContent = f;
-      list.appendChild(li);
+      ul.appendChild(li);
     });
+    list.appendChild(ul);
 
     modal.hidden = false;
     document.body.classList.add("modal-open");

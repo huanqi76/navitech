@@ -151,10 +151,6 @@
             "<p>" + t("footer.addr") + "</p>" +
           "</div>" +
         "</div>" +
-        '<div class="footer__bottom">' +
-          "<p>" + t("footer.copy", { year: String(new Date().getFullYear()) }) + "</p>" +
-          "<p>" + t("footer.placeholder") + "</p>" +
-        "</div>" +
       "</div>"
     ));
   }
