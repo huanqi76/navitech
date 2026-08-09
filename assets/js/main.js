@@ -18,7 +18,7 @@
 
   var NAV_LINKS = [
     { href: "index.html", labelKey: "nav.home", page: "home" },
-    { href: "products.html", labelKey: "nav.products", page: "products" },
+    { href: "solutions.html", labelKey: "nav.solutions", page: "solutions" },
     { href: "clients.html", labelKey: "nav.clients", page: "clients" },
     { href: "about.html", labelKey: "nav.about", page: "about" },
     { href: "contact.html", labelKey: "nav.contact", page: "contact" }
@@ -27,6 +27,7 @@
   var PAGE_TITLES = {
     home: "title.home",
     products: "title.products",
+    solutions: "title.solutions",
     clients: "title.clients",
     about: "title.about",
     contact: "title.contact"
@@ -137,23 +138,15 @@
           '<div>' +
             "<h4>" + t("footer.site") + "</h4>" +
             '<nav class="footer__links" aria-label="Footer">' +
-              '<a href="products.html">' + t("nav.products") + "</a>" +
+              '<a href="solutions.html">' + t("nav.solutions") + "</a>" +
               '<a href="clients.html">' + t("nav.clients") + "</a>" +
               '<a href="about.html">' + t("nav.about") + "</a>" +
               '<a href="contact.html">' + t("nav.contact") + "</a>" +
             "</nav>" +
           "</div>" +
-          '<div>' +
-            "<h4>" + t("footer.engineering") + "</h4>" +
-            '<nav class="footer__links" aria-label="Engineering">' +
-              '<a href="products.html">' + t("footer.links.specs") + "</a>" +
-              '<a href="about.html">' + t("footer.links.compliance") + "</a>" +
-              '<a href="contact.html">' + t("footer.links.quote") + "</a>" +
-            "</nav>" +
-          "</div>" +
           '<div class="footer__contact">' +
             "<h4>" + t("footer.contact") + "</h4>" +
-            '<p class="text-mono">sales@navitech.example</p>' +
+            '<p class="text-mono">sales@navitech.cn</p>' +
             '<p class="text-mono">+855 23 000 000</p>' +
             "<p>" + t("footer.addr") + "</p>" +
           "</div>" +

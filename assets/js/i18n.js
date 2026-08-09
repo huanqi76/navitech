@@ -15,6 +15,7 @@
       /* nav / status / footer */
       "nav.home": "Home",
       "nav.products": "Products",
+      "nav.solutions": "Solutions",
       "nav.clients": "Clients",
       "nav.services": "Services",
       "nav.about": "About",
@@ -30,17 +31,12 @@
       "unit.notes": "notes",
       "common.yes": "Yes",
       "common.no": "No",
-      "footer.tagline": "Cash deposit machines for banks, with installation, monitoring, and cash logistics support.",
+      "footer.tagline": "Cash processing solutions for banks and retail businesses, covering hardware, software, and customization.",
       "footer.site": "Site",
-      "footer.engineering": "Engineering",
       "footer.contact": "Contact",
-      "footer.links.specs": "Specifications",
-      "footer.links.sla": "SLA and response",
-      "footer.links.compliance": "Compliance",
-      "footer.links.quote": "Request a quote",
       "footer.copy": "© {year} Navitech. All rights reserved.",
       "footer.placeholder": "Placeholder content. Figures and model data pending final engineering validation.",
-      "footer.addr": "Phnom Penh, Cambodia. Serving financial institutions internationally.",
+      "footer.addr": "No. 1000 Lujiazui Ring Road, Pudong New District, Shanghai, China. Serving financial institutions internationally.",
 
       /* flags */
       "flag.spec": "Spec data placeholder",
@@ -50,6 +46,7 @@
       /* titles */
       "title.home": "Navitech | Cash Deposit Systems for Banks",
       "title.products": "Products | Navitech",
+      "title.solutions": "Solutions | Navitech",
       "title.clients": "Clients and Deployments | Navitech",
       "title.services": "Services | Navitech",
       "title.about": "About | Navitech",
@@ -60,7 +57,7 @@
       "home.hero.kicker": "Hardware and field operations, one vendor",
       "home.hero.h1": "Cash deposit systems for <span class=\"accent\">banks and financial institutions</span>.",
       "home.hero.lede": "Navitech designs, manufactures, deploys, and services cash deposit machines (CDMs) for banks and financial institutions. The machines combine robust note handling, secure cassettes, and 24/7 remote monitoring under a single service contract.",
-      "home.hero.cta1": "Browse products",
+      "home.hero.cta1": "Browse solutions",
       "home.hero.cta2": "Request a quote",
       "home.stat.units": "Units in service",
       "home.stat.uptime": "Uptime SLA",
@@ -71,9 +68,9 @@
       "home.what.h2": "Hardware and service from one vendor",
       "home.what.p": "We build the deposit machines and run the operations that keep them reliable: site survey and installation, preventive maintenance, remote monitoring, and cash logistics from cassette to vault. One vendor, one service contract.",
       "home.trio1.index": "01 / Hardware",
-      "home.trio1.title": "Products",
+      "home.trio1.title": "Solutions",
       "home.trio1.p": "Lobby deposit, through-the-wall, compact, and cash-center machines. Each model documents its note handling, security, and compliance profile for procurement review.",
-      "home.trio1.more": "Browse the catalog",
+      "home.trio1.more": "Browse the solutions",
       "home.trio2.index": "02 / Deployments",
       "home.trio2.title": "Clients",
       "home.trio2.p": "Deployments at ABA Bank, AMK, BTI, and PLB: branch rollouts, 24/7 wall units, and bulk cash-center processing, with the scope of each.",
@@ -99,6 +96,14 @@
       "products.filter.all": "All models",
       "products.count": "Showing {count} of {total} units",
       "products.cta.btn": "Request a quote",
+
+      /* solutions */
+      "solutions.breadcrumb": "Solutions",
+      "solutions.h1": "Solution Offerings",
+      "solutions.lede": "Deposit automation, secure safedoor access, and QR-based cash transactions, engineered and operated by one vendor.",
+      "solutions.card.cta": "View details",
+      "solutions.modal.kicker": "Solution",
+      "solutions.modal.features": "Key features",
 
       /* product detail */
       "detail.breadcrumb": "Products",
@@ -273,6 +278,7 @@
       /* nav / status / footer */
       "nav.home": "首页",
       "nav.products": "产品",
+      "nav.solutions": "解决方案",
       "nav.clients": "客户案例",
       "nav.services": "服务",
       "nav.about": "关于我们",
@@ -288,17 +294,12 @@
       "unit.notes": "张",
       "common.yes": "是",
       "common.no": "否",
-      "footer.tagline": "为银行提供现金存款设备，并提供安装、监控与现金物流支持。",
+      "footer.tagline": "银行或零售行业的现金处理解决方案提供商，包含硬件、软件、客户化",
       "footer.site": "网站",
-      "footer.engineering": "工程信息",
       "footer.contact": "联系方式",
-      "footer.links.specs": "规格参数",
-      "footer.links.sla": "SLA 与响应",
-      "footer.links.compliance": "合规认证",
-      "footer.links.quote": "获取报价",
       "footer.copy": "© {year} Navitech 版权所有。",
       "footer.placeholder": "占位内容。数据与型号信息待最终工程确认。",
-      "footer.addr": "柬埔寨金边，服务国际市场的金融机构。",
+      "footer.addr": "中国上海市浦东新区陆家嘴环路 1000 号，服务国际市场的金融机构。",
 
       /* flags */
       "flag.spec": "规格为占位数据",
@@ -308,6 +309,7 @@
       /* titles */
       "title.home": "Navitech | 银行现金存款系统",
       "title.products": "产品 | Navitech",
+      "title.solutions": "解决方案 | Navitech",
       "title.clients": "客户案例 | Navitech",
       "title.services": "服务 | Navitech",
       "title.about": "关于我们 | Navitech",
@@ -318,7 +320,7 @@
       "home.hero.kicker": "硬件与现场运营，同一供应商",
       "home.hero.h1": "为<span class=\"accent\">银行与金融机构</span>设计的现金存款系统。",
       "home.hero.lede": "Navitech 为银行与金融机构设计、制造、部署并维护现金存款机（CDM）。设备采用可靠的纸币处理与安全的钞箱，并在统一服务合同下提供 7×24 远程监控。",
-      "home.hero.cta1": "浏览产品",
+      "home.hero.cta1": "浏览解决方案",
       "home.hero.cta2": "获取报价",
       "home.stat.units": "在役设备",
       "home.stat.uptime": "SLA 可用率",
@@ -329,9 +331,9 @@
       "home.what.h2": "设备与服务，来自同一供应商",
       "home.what.p": "我们自主制造存款设备，并负责保障设备可靠运行的全套环节：现场勘查与安装、预防性维护、远程监控，以及从钞箱到金库的现金物流。同一供应商，同一服务合同。",
       "home.trio1.index": "01 / 硬件",
-      "home.trio1.title": "产品",
+      "home.trio1.title": "解决方案",
       "home.trio1.p": "大堂存款机、穿墙式、紧凑型与现金中心设备。每一款都提供纸币处理、安全与合规的完整说明，供采购评审参考。",
-      "home.trio1.more": "浏览产品目录",
+      "home.trio1.more": "浏览解决方案",
       "home.trio2.index": "02 / 部署案例",
       "home.trio2.title": "客户案例",
       "home.trio2.p": "ABA Bank、AMK、BTI 与 PLB 的部署项目：分行铺设、7×24 穿墙设备与大宗现金中心处理，并附各项目范围。",
@@ -344,7 +346,7 @@
 
       /* 首页横幅 + 关于我们（v2） */
       "home.banner.headline": "现金处理解决方案",
-      "home.banner.tagline": "银行或零售行业的现金处理解决方案提供商，其中包含硬件、软件、客户化。",
+      "home.banner.tagline": "银行或零售行业的现金处理解决方案提供商，包含硬件、软件、客户化",
       "home.about.kicker": "关于我们",
       "home.about.title": "创始团队",
       "home.about.p1": "Navitech 的创始人是中国金融科技领域的专业人士，拥有超过 30 年从业经验，曾就职于 NCR、Wincor Nixdorf、Asino-Wincor 等全球及本土跨国企业。",
@@ -357,6 +359,14 @@
       "products.filter.all": "全部型号",
       "products.count": "共 {total} 款，当前显示 {count} 款",
       "products.cta.btn": "获取报价",
+
+      /* solutions */
+      "solutions.breadcrumb": "解决方案",
+      "solutions.h1": "解决方案产品",
+      "solutions.lede": "存款自动化、安全门锁与二维码现金交易，由同一供应商研发与运营。",
+      "solutions.card.cta": "查看详情",
+      "solutions.modal.kicker": "方案",
+      "solutions.modal.features": "核心功能",
 
       /* product detail */
       "detail.breadcrumb": "产品",

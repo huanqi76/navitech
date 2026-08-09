@@ -51,7 +51,7 @@
     <!-- About: founders copy on the left, logo on the right -->
     <section class="section home-about">
       <div class="container home-about__inner">
-        <div class="home-about__text">
+        <div class="home-about__text reveal">
           <p class="kicker mb-3" data-i18n="home.about.kicker">About</p>
           <h2 data-i18n="home.about.title">The founders</h2>
           <p data-i18n="home.about.p1">
@@ -66,7 +66,7 @@
             Wincor/NCR/Diebold ATM/CRM (2005).
           </p>
         </div>
-        <div class="home-about__logo">
+        <div class="home-about__logo reveal reveal--delay">
           <img src="assets/img/logo.png" alt="Navitech">
         </div>
       </div>
@@ -81,6 +81,25 @@
   <script src="assets/js/logos.js"></script>
   <script>
     I18N.init();
+  </script>
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      var els = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        for (var i = 0; i < els.length; i++) els[i].classList.add("is-in");
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>
