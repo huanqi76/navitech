@@ -84,6 +84,14 @@
       "home.trio3.more": "Read the service model",
       "home.cta.btn": "Request a quote",
 
+      /* home banner + about (v2) */
+      "home.banner.headline": "Cash Handling Solutions",
+      "home.banner.tagline": "A cash handling solutions provider for the banking and retail industries — covering hardware, software, and customization.",
+      "home.about.kicker": "About",
+      "home.about.title": "The founders",
+      "home.about.p1": "The founders of Navitech are professionals in the China Financial Technology Sector with over 30 years experience, working for global and local MNCs such as NCR, Wincor Nixdorf, and Asino-Wincor.",
+      "home.about.p2": "During this period, we have undertaken various large-scale software projects, such as the Shanghai Pudong Development Bank Multivendor software development (2019), Wincor Nixdorf CMDV4 WOSA/XFS development (2006), and ICBC Multivendor software development on Wincor/NCR/Diebold ATM/CRM (2005).",
+
       /* products catalog */
       "products.breadcrumb": "Products",
       "products.h1": "Product catalog",
@@ -333,6 +341,14 @@
       "home.trio3.p": "安装、预防性维护、7×24 监控与现金服务，并签订包含明确响应与恢复目标的服务合同。",
       "home.trio3.more": "了解服务模式",
       "home.cta.btn": "获取报价",
+
+      /* 首页横幅 + 关于我们（v2） */
+      "home.banner.headline": "现金处理解决方案",
+      "home.banner.tagline": "银行或零售行业的现金处理解决方案提供商，其中包含硬件、软件、客户化。",
+      "home.about.kicker": "关于我们",
+      "home.about.title": "创始团队",
+      "home.about.p1": "Navitech 的创始人是中国金融科技领域的专业人士，拥有超过 30 年从业经验，曾就职于 NCR、Wincor Nixdorf、Asino-Wincor 等全球及本土跨国企业。",
+      "home.about.p2": "在此期间，我们承担了多个大型软件项目，例如上海浦东发展银行多厂商软件开发（2019）、Wincor Nixdorf CMDV4 WOSA/XFS 开发（2006），以及工商银行基于 Wincor/NCR/Diebold ATM/CRM 的多厂商软件开发（2005）。",
 
       /* products catalog */
       "products.breadcrumb": "产品",

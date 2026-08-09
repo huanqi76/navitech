@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -17,86 +17,57 @@
   <header id="site-nav"></header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <!-- <div class="hero__kicker">
-          <span class="led led--on"></span>
-          <span class="kicker" data-i18n="home.hero.kicker">Hardware and field operations, one vendor</span>
-        </div> -->
-        <h1 data-i18n-html="home.hero.h1">Cash deposit systems for <span class="accent">banks and financial institutions</span></h1>
-        <p class="hero__lede" data-i18n="home.hero.lede">
-          Robust note handling, secure cassettes, and
-          24/7 remote monitoring under a single service contract
-        </p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="products.html" data-i18n="home.hero.cta1">Browse products</a>
-          <a class="btn btn--ghost-light" href="contact.html" data-i18n="home.hero.cta2">Request a quote</a>
-        </div>
-        <div class="hero__footer">
-          <div class="hero__stat">
-            <span class="hero__stat-num">130+</span>
-            <span class="hero__stat-label" data-i18n="home.stat.units">Units in service</span>
+    <!-- 30-year banner (adapted from the reference banner) -->
+    <section class="banner" aria-label="Navitech, 30 years of cash handling solutions">
+      <div class="banner__grid" aria-hidden="true"></div>
+      <div class="banner__sheen" aria-hidden="true"></div>
+
+      <div class="container banner__inner">
+        <div class="banner__visual" aria-hidden="true">
+          <div class="banner__kiosk banner__kiosk--1">
+            <div class="banner__shadow"></div>
+            <img src="assets/img/kiosks/k1.png" alt="">
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-num">24/7</span>
-            <span class="hero__stat-label" data-i18n="home.stat.monitor">Remote monitoring</span>
+          <div class="banner__kiosk banner__kiosk--2">
+            <div class="banner__shadow"></div>
+            <img src="assets/img/kiosks/k2.png" alt="">
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-num">4 hr</span>
-            <span class="hero__stat-label" data-i18n="home.stat.response">Service response</span>
+          <div class="banner__kiosk banner__kiosk--3">
+            <div class="banner__shadow"></div>
+            <img src="assets/img/kiosks/k3.png" alt="">
           </div>
         </div>
+
+        <div class="banner__content">
+          <div class="banner__rule" aria-hidden="true"></div>
+          <h1 class="banner__headline" data-i18n="home.banner.headline">Cash Handling Solutions</h1>
+          <p class="banner__tagline" data-i18n="home.banner.tagline">A cash handling solutions provider for the banking and retail industries &mdash; covering hardware, software, and customization.</p>
+        </div>
       </div>
+
+      <div class="banner__accent" aria-hidden="true"></div>
     </section>
 
-    <!-- Trust signals: client wordmarks (white surface) -->
-    <section class="section section--paper" style="padding-top: var(--space-7); padding-bottom: var(--space-7);">
-      <div class="container">
-        <p class="kicker mb-4" data-i18n="home.trust.kicker">Deployed with</p>
-        <div class="logo-wall" data-logo-wall></div>
-      </div>
-    </section>
-
-    <!-- What we do -->
-    <section class="section section--paper" style="padding-top:0;">
-      <div class="container">
-        <div class="section__head">
-          <span class="kicker" data-i18n="home.what.kicker">What we do</span>
-          <h2 data-i18n="home.what.h2">Hardware and service from one vendor</h2>
-          <p data-i18n="home.what.p">
-            We build the deposit machines and run the operations that keep them reliable: site survey
-            and installation, preventive maintenance, remote monitoring, and cash logistics from cassette
-            to vault. One vendor, one service contract.
+    <!-- About: founders copy on the left, logo on the right -->
+    <section class="section home-about">
+      <div class="container home-about__inner">
+        <div class="home-about__text">
+          <p class="kicker mb-3" data-i18n="home.about.kicker">About</p>
+          <h2 data-i18n="home.about.title">The founders</h2>
+          <p data-i18n="home.about.p1">
+            The founders of Navitech are professionals in the China Financial Technology Sector with over
+            30 years experience, working for global and local MNCs such as NCR, Wincor Nixdorf, and
+            Asino-Wincor.
           </p>
-          <div class="rail" role="presentation" aria-hidden="true">
-            <span class="rail__track"></span>
-            <span class="rail__node"></span>
-            <span class="rail__track"></span>
-          </div>
+          <p data-i18n="home.about.p2">
+            During this period, we have undertaken various large-scale software projects, such as the
+            Shanghai Pudong Development Bank Multivendor software development (2019), Wincor Nixdorf
+            CMDV4 WOSA/XFS development (2006), and ICBC Multivendor software development on
+            Wincor/NCR/Diebold ATM/CRM (2005).
+          </p>
         </div>
-        <div class="trio">
-          <a class="trio__card" href="products.html">
-            <span class="trio__index" data-i18n="home.trio1.index">01 / Hardware</span>
-            <h3 data-i18n="home.trio1.title">Products</h3>
-            <p data-i18n="home.trio1.p">Lobby deposit, through-the-wall, compact, and cash-center machines. Each model documents its note handling, security, and compliance profile for procurement review.</p>
-            <span class="trio__more" data-i18n="home.trio1.more">Browse the catalog</span>
-          </a>
-          <a class="trio__card" href="clients.html">
-            <span class="trio__index" data-i18n="home.trio2.index">02 / Deployments</span>
-            <h3 data-i18n="home.trio2.title">Clients</h3>
-            <p data-i18n="home.trio2.p">Deployments at ABA Bank, AMK, BTI, and PLB: branch rollouts, 24/7 wall units, and bulk cash-center processing, with the scope of each.</p>
-            <span class="trio__more" data-i18n="home.trio2.more">See the deployments</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-band">
-      <div class="container section" style="padding-block: var(--space-7);">
-        <div class="cta-band__inner">
-          <a class="btn btn--primary" href="contact.html" data-i18n="home.cta.btn">Request a quote</a>
+        <div class="home-about__logo">
+          <img src="assets/img/logo.png" alt="Navitech">
         </div>
       </div>
     </section>
