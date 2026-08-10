@@ -52,7 +52,7 @@
       media = '<div class="case__photo"><img loading="lazy" src="' + m.src + '" alt="' + alt + '"></div>';
     }
     var caption = window.I18N.isZh() ? (m.captionZh || m.caption || "") : (m.caption || "");
-    var full = m.type === "video" ? " case__figure--full" : "";
+    var full = m.type === "video" || m.full ? " case__figure--full" : "";
     return (
       '<figure class="case__figure' + full + '">' +
         media +

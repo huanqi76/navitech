@@ -152,7 +152,6 @@
       "detail.notfound.p": "The requested machine could not be found in the current catalog.",
 
       /* clients */
-      "clients.breadcrumb": "Successful Cases",
       "clients.h1": "Successful Cases",
       "clients.results.kicker": "Track record",
       "clients.results.h2": "Across the four cases",
@@ -224,7 +223,6 @@
       /* contact */
       "contact.breadcrumb": "Contact",
       "contact.h1": "Request a quote",
-      "contact.lede": "Tell us your footprint and deposit volumes, and we will respond with a hardware and service proposal: specifications, rollout plan, and service levels.",
       "form.institution": "Institution",
       "form.name": "Contact name",
       "form.role": "Role",
@@ -396,7 +394,6 @@
       "detail.notfound.p": "当前目录中未找到所请求的设备。",
 
       /* clients */
-      "clients.breadcrumb": "成功案例",
       "clients.h1": "成功案例",
       "clients.results.kicker": "成果概览",
       "clients.results.h2": "四个案例累计",
@@ -468,7 +465,6 @@
       /* contact */
       "contact.breadcrumb": "联系我们",
       "contact.h1": "获取报价",
-      "contact.lede": "告诉我们您的网络规模与存款量，我们将回复硬件与服务方案：规格、部署计划与服务级别。",
       "form.institution": "机构名称",
       "form.name": "联系人",
       "form.role": "职务",

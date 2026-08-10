@@ -260,8 +260,9 @@ window.NAVITECH_BRAND = {
    NAVITECH_LOGOS), copy, a concise detail paragraph, and a
    captioned media gallery.
    `media` takes an array of objects:
-     { type: "image", src, alt, caption?, captionZh? }
+     { type: "image", src, alt, caption?, captionZh?, full? }
      { type: "video", src, alt, poster?, caption?, captionZh? }
+   Set `full: true` to make an image span the full gallery width.
    Drop files in assets/img/<case-id>/ and list them here; until
    set, a neutral placeholder panel is shown. `zh` carries the
    Chinese copy. ---- */
@@ -289,13 +290,17 @@ window.NAVITECH_CASES = [
     num: "02",
     name: "AMK",
     country: "Cambodia",
-    media: [],
-    intro: "Compact NT-200 terminals at high-traffic microfinance cash points.",
-    detail: "Agents and merchants at AMK's high-traffic microfinance cash points previously queued for tellers to deposit daily takings. Compact NT-200 deposit terminals now allow them to deposit directly and without waiting, while counts are reconciled against branch records each cycle.",
+    media: [
+      { type: "image", src: "assets/img/amk/AMK-PTT-Station-1.jpg", alt: "PTT gas station pilot location in Phnom Penh", caption: "PTT gas station — Phnom Penh pilot", captionZh: "PTT 加油站 — 金边试点" },
+      { type: "image", src: "assets/img/amk/AMK-PTT-Station-2.jpg", alt: "PTT gas station forecourt with deposit machines", caption: "PTT gas station — forecourt", captionZh: "PTT 加油站 — 加油区" },
+      { type: "image", full: true, src: "assets/img/amk/AMK-1.png", alt: "Deposit machines installed at a PTT gas station in Phnom Penh", caption: "Deposit machines installed at a pilot outlet", captionZh: "试点网点安装的投款机" }
+    ],
+    intro: "Deposit terminals across PTT's network of gas stations, crediting station takings to the corporate account in real time.",
+    detail: "AMK, one of Cambodia's leading microfinance institutions, partnered with Navitech to help PTT Cambodia handle cash across a network of more than 170 gas stations. As mobile payments grew, cash transactions at the pumps fell to 35%, and cash-in-transit collections moved from daily to weekly — leaving each outlet holding several days of takings on site, at risk and undeposited. A deposit terminal at every outlet allows cashiers to bank cash at any time: funds are credited to PTT's corporate account in real time through the bank's OpenAPI, while notes are held securely in the machine's safe to industry overnight-storage standards until the weekly collection. The pilot ran across 13 stations in Phnom Penh.",
     zh: {
       country: "柬埔寨",
-      intro: "在客流密集的小额信贷现金网点部署紧凑型 NT-200 终端。",
-      detail: "AMK 的代理与商户在客流密集的小额信贷现金网点，过去需要排队等待柜员办理存款。紧凑型 NT-200 投款终端现已支持直接存入每日营收、无需等待，计数在每个周期内自动与分行记录对账。"
+      intro: "覆盖 PTT 加油站网络的投款机方案，站点营收实时入账对公账户。",
+      detail: "AMK 是柬埔寨领先的小额信贷机构之一，与 Navitech 合作帮助泰国运营商 PTT 管理其柬埔寨 170 多个加油站的现金。随着移动支付普及，加油站的现金支付占比降至 35%，押运收款也从每日改为每周——网点需在站内保存数日营收，承担保管风险，资金也无法及时入账。在每个网点部署投款机后，收银员可随时存入现金：资金通过银行 OpenAPI 实时划转至 PTT 对公账户，纸币则按行业安全过夜标准保存在投款机保险柜内，直至每周押运收取。试点在金边 13 家加油站完成。"
     }
   },
   {

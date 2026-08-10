@@ -1758,7 +1758,7 @@
   align-items: center;
   text-align: center;
   gap: var(--space-3);
-  max-width: 68ch;
+  max-width: 56rem;
   margin-inline: auto;
   min-width: 0;
 }
@@ -1784,9 +1784,17 @@
 }
 
 .case__detail {
+  background: var(--paper-200);
+  border: var(--border-w) solid var(--paper-300);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   color: var(--steel-600);
+}
+
+.case--alt .case__detail {
+  background: var(--paper-100);
 }
 
 /* Gallery column */
