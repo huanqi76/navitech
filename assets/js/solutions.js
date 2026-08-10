@@ -15,22 +15,21 @@
       name: "Cash Deposit Solution",
       intro: "Self-service deposit terminals for branch lobbies, 24-hour walls, retail sites, and cash centers.",
       image: "assets/img/kiosks/k1.png",
+      modalImage: "assets/img/solutions/deposit-connect-large.png",
       detail: "Deposit automation for every placement a bank network uses. Terminals, note handling, secure cassettes, and the operations contract that keeps them running are delivered together.",
       features: [
-        "Lobby, through-the-wall, compact, and cash-center terminals",
-        "Multi-denomination counting and counterfeit detection",
-        "Secure cassettes with 24/7 remote monitoring",
-        "Installation, training, and cash logistics under one contract"
+        "Automatic counting and counterfeit detection with banknote serial-number capture",
+        "Deposit results returned directly to the treasury management system",
+        "Real-time monitoring and alerts on the management platform"
       ],
       zh: {
         name: "投款机解决方案",
         intro: "适用于分行大堂、24 小时外墙、零售网点与现金中心的自助存款终端。",
         detail: "覆盖银行网络全部部署形态的存款自动化。终端、纸币处理、安全钞箱以及保障其持续运行的运营合同，一站式交付。",
         features: [
-          "大堂、穿墙式、紧凑型与现金中心终端",
-          "多面额点钞与假币检测",
-          "安全钞箱与 7×24 远程监控",
-          "同一合同下的安装、培训与现金物流"
+          "自动点钞、验钞记录钞票冠字号信息",
+          "直接将投款结果返回给零管系统",
+          "管理平台实时监控、预警"
         ]
       }
     },
@@ -65,23 +64,28 @@
       num: "03",
       name: "QR Code Withdrawal & Deposit Solution",
       intro: "Cardless, QR-based cash deposit and withdrawal for self-service banking.",
-      image: "assets/img/kiosks/k3.png",
-      detail: "Put self-service cash on a phone. QR-based deposit and withdrawal that works with the bank's mobile app, with secure note handling and settlement built in.",
+      image: "assets/img/solutions/qr-code.png",
+      modalImage: "assets/img/solutions/qr-code-large.png",
+      detail: "Cardless QR withdrawal at the cash recycler: the customer starts the withdrawal on the CRS, scans the KHQR code with the mobile app, and the machine dispenses the cash on success.",
       features: [
-        "Cardless deposit and withdrawal via QR code",
-        "Works with the bank's mobile banking app",
-        "Self-service machines with secure note handling",
-        "Settlement and reconciliation built in"
+        "Customer selects the QR withdrawal function on the CRS",
+        "Customer selects the currency (USD or KHR)",
+        "Customer selects or enters the withdrawal amount",
+        "Customer scans the KHQR code with the mobile application",
+        "Customer completes the payment flow in the mobile application (enters PIN, confirms payment, etc.)",
+        "If the payment succeeds, the CRS dispenses the cash"
       ],
       zh: {
         name: "二维码存取款解决方案",
         intro: "基于二维码的无卡存取款，让自助现金操作迁移至手机端。",
-        detail: "将自助现金操作迁移至手机端。基于二维码的存取款对接银行手机银行 App，并内置安全纸币处理与结算对账。",
+        detail: "在现金循环机（CRS）上实现无卡二维码取款：客户在 CRS 上发起取款，使用移动应用扫描 KHQR 码，支付成功后机器吐出钞票。",
         features: [
-          "通过二维码实现无卡存取款",
-          "对接银行手机银行 App",
-          "安全纸币处理的自助终端",
-          "内置结算与对账"
+          "客户在 CRS 上选择二维码取款功能",
+          "客户选择币种（美元或瑞尔）",
+          "客户选择或输入取款金额",
+          "客户使用移动应用程序扫描该 KHQR 码",
+          "客户在移动应用程序上继续完成支付流程（输入 PIN 码、确认支付等）",
+          "若支付成功，CRS 吐出钞票"
         ]
       }
     }

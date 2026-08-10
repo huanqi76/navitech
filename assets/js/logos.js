@@ -9,7 +9,7 @@
   "use strict";
 
   function itemHTML(c) {
-    var href = "clients.html";
+    var href = "successful_cases.html";
     if (c.logo) {
       return '<a class="logo-wall__item" href="' + href + '"><img src="' + c.logo + '" alt="' + c.name + '"></a>';
     }

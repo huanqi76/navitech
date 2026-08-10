@@ -19,8 +19,7 @@
   var NAV_LINKS = [
     { href: "index.html", labelKey: "nav.home", page: "home" },
     { href: "solutions.html", labelKey: "nav.solutions", page: "solutions" },
-    { href: "clients.html", labelKey: "nav.clients", page: "clients" },
-    { href: "about.html", labelKey: "nav.about", page: "about" },
+    { href: "successful_cases.html", labelKey: "nav.clients", page: "clients" },
     { href: "contact.html", labelKey: "nav.contact", page: "contact" }
   ];
 
@@ -29,7 +28,6 @@
     products: "title.products",
     solutions: "title.solutions",
     clients: "title.clients",
-    about: "title.about",
     contact: "title.contact"
   };
 
@@ -139,8 +137,7 @@
             "<h4>" + t("footer.site") + "</h4>" +
             '<nav class="footer__links" aria-label="Footer">' +
               '<a href="solutions.html">' + t("nav.solutions") + "</a>" +
-              '<a href="clients.html">' + t("nav.clients") + "</a>" +
-              '<a href="about.html">' + t("nav.about") + "</a>" +
+              '<a href="successful_cases.html">' + t("nav.clients") + "</a>" +
               '<a href="contact.html">' + t("nav.contact") + "</a>" +
             "</nav>" +
           "</div>" +
