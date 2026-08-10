@@ -154,9 +154,6 @@
       /* clients */
       "clients.breadcrumb": "Successful Cases",
       "clients.h1": "Successful Cases",
-      "clients.case.results": "Results",
-      "clients.case.challenge": "Challenge",
-      "clients.case.solution": "Solution",
       "clients.results.kicker": "Track record",
       "clients.results.h2": "Across the four cases",
       "clients.results.1v": "90+",
@@ -401,9 +398,6 @@
       /* clients */
       "clients.breadcrumb": "成功案例",
       "clients.h1": "成功案例",
-      "clients.case.results": "项目成果",
-      "clients.case.challenge": "挑战",
-      "clients.case.solution": "方案",
       "clients.results.kicker": "成果概览",
       "clients.results.h2": "四个案例累计",
       "clients.results.1v": "90+",

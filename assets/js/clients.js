@@ -1,8 +1,8 @@
 /* ============================================================
    NAVITECH · SUCCESSFUL CASES
    Renders full, readable case sections: client logo, copy,
-   facts, challenge / solution / result blocks, and a photo
-   gallery. Case copy lives in
+   a concise detail paragraph, and a captioned photo gallery.
+   Case copy lives in
    NAVITECH_CASES (products-data.js); client logos live in
    NAVITECH_LOGOS. Replace placeholder detail / highlights copy
    and add gallery images as they are approved.
@@ -39,17 +39,26 @@
 
   function mediaHTML(m, c) {
     var alt = m.alt || c.name;
+    var media;
     if (m.type === "video") {
-      return (
+      media =
         '<div class="case__photo case__photo--video">' +
           '<video controls preload="metadata" playsinline' +
             (m.poster ? ' poster="' + m.poster + '"' : "") + ">" +
             '<source src="' + m.src + '" type="video/mp4">' +
           "</video>" +
-        "</div>"
-      );
+        "</div>";
+    } else {
+      media = '<div class="case__photo"><img loading="lazy" src="' + m.src + '" alt="' + alt + '"></div>';
     }
-    return '<div class="case__photo"><img loading="lazy" src="' + m.src + '" alt="' + alt + '"></div>';
+    var caption = window.I18N.isZh() ? (m.captionZh || m.caption || "") : (m.caption || "");
+    var full = m.type === "video" ? " case__figure--full" : "";
+    return (
+      '<figure class="case__figure' + full + '">' +
+        media +
+        (caption ? '<figcaption class="case__photo-cap">' + caption + "</figcaption>" : "") +
+      "</figure>"
+    );
   }
 
   function galleryHTML(c) {
@@ -69,28 +78,7 @@
     );
   }
 
-  function factHTML(label, value) {
-    return (
-      '<div class="case__fact">' +
-        '<span class="case__fact-label">' + label + "</span>" +
-        '<span class="case__fact-value">' + value + "</span>" +
-      "</div>"
-    );
-  }
-
-  function blockHTML(kicker, items) {
-    return (
-      '<div class="case__block">' +
-        "<h3>" + kicker + "</h3>" +
-        '<ul class="case__block-list">' +
-          items.map(function (i) { return "<li>" + i + "</li>"; }).join("") +
-        "</ul>" +
-      "</div>"
-    );
-  }
-
   function caseHTML(c, i) {
-    var facts = L(c, "facts");
     var alt = i % 2 === 1 ? " case--alt" : "";
     return (
       '<article class="case' + alt + '" id="case-' + c.id + '">' +
@@ -104,14 +92,7 @@
               '<h2 class="case__name">' + c.name + "</h2>" +
               '<p class="case__country">' + L(c, "country") + "</p>" +
               '<p class="case__intro">' + L(c, "intro") + "</p>" +
-              '<div class="case__facts">' +
-                factHTML(t("deploy.meta.units"), facts.units) +
-                factHTML(t("deploy.meta.scope"), facts.scope) +
-                factHTML(t("deploy.meta.config"), facts.config) +
-              "</div>" +
-              blockHTML(t("clients.case.challenge"), L(c, "challenge")) +
-              blockHTML(t("clients.case.solution"), L(c, "solution")) +
-              blockHTML(t("clients.case.results"), L(c, "result")) +
+              '<p class="case__detail">' + L(c, "detail") + "</p>" +
             "</div>" +
             galleryHTML(c) +
           "</div>" +

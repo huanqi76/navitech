@@ -257,10 +257,11 @@ window.NAVITECH_BRAND = {
 
 /* ---- Cases (successful case page).
    Each entry is one full case section: client logo (via
-   NAVITECH_LOGOS), copy, facts, challenge / solution / result
-   blocks, and a media gallery.
+   NAVITECH_LOGOS), copy, a concise detail paragraph, and a
+   captioned media gallery.
    `media` takes an array of objects:
-     { type: "image", src, alt } | { type: "video", src, alt, poster }
+     { type: "image", src, alt, caption?, captionZh? }
+     { type: "video", src, alt, poster?, caption?, captionZh? }
    Drop files in assets/img/<case-id>/ and list them here; until
    set, a neutral placeholder panel is shown. `zh` carries the
    Chinese copy. ---- */
@@ -271,44 +272,16 @@ window.NAVITECH_CASES = [
     name: "ABA Bank",
     country: "Cambodia",
     media: [
-      { type: "image", src: "assets/img/aba/ABA for AEON mall.jpg", alt: "Deposit machines in the secure cash room at an AEON mall" },
-      { type: "image", src: "assets/img/aba/ABA for Airport.jpg", alt: "Deposit machines at ABA's airport location" },
-      { type: "video", src: "assets/img/aba/ABA.mp4", poster: "assets/img/aba/ABA for AEON mall.jpg", alt: "AEON mall merchants using the deposit machines" }
+      { type: "image", src: "assets/img/aba/ABA for AEON mall.jpg", alt: "Deposit machines in the secure cash room at an AEON mall", caption: "Secure cash room — AEON Mall", captionZh: "安全现金房 — AEON 购物中心" },
+      { type: "image", src: "assets/img/aba/ABA for Airport.jpg", alt: "Deposit machines at ABA's airport location", caption: "Deposit lobby — Airport branch", captionZh: "机场支行存款区" },
+      { type: "video", src: "assets/img/aba/ABA.mp4", poster: "assets/img/aba/ABA for AEON mall.jpg", alt: "AEON mall merchants using the deposit machines", caption: "Merchants depositing after closing time", captionZh: "收银员打烊后存入现金" }
     ],
-    intro: "Secure, after-hours cash deposit for AEON's mall tenants — all 12 denominations accepted, with cash collected and settled by ABA's cash-in-transit partner.",
-    facts: { units: "90", scope: "3 AEON malls", config: "All 12 denominations" },
-    challenge: [
-      "Every tenant in AEON's three Phnom Penh malls ends the day holding cash with nowhere safe to bank it",
-      "General-purpose personal deposit machines rejected most note denominations",
-      "Moving takings from personal to business accounts raised compliance concerns"
-    ],
-    solution: [
-      "A secure cash room in every mall, holding ten deposit machines",
-      "All 12 note denominations accepted — cashiers deposit at any time, no queues, no rejected notes",
-      "A cash-in-transit partner collects and settles the cash for ABA on a fixed schedule"
-    ],
-    result: [
-      "90 deposit machines installed across the three malls (June 2024)",
-      "Stable operation since late 2022, with consistently positive merchant feedback"
-    ],
+    intro: "Secure after-hours cash deposit for AEON's mall tenants.",
+    detail: "ABA, Cambodia's largest commercial bank, partnered with Navitech to address the nightly cash-management challenge at AEON's three Phnom Penh malls, where tenants held significant end-of-day cash with no secure deposit option and standard personal deposit machines rejected most note denominations. Navitech deployed a secure cash room in each mall, equipped with ten deposit machines accepting all 12 note denominations, allowing cashiers to deposit at any time without queuing. A cash-in-transit partner collects and settles funds on a fixed schedule. Today, 90 machines are in service and operating reliably.",
     zh: {
       country: "柬埔寨",
-      intro: "在 AEON 三家购物中心的安全现金房内部署投款机，让每家商户都能安全、合规地存入当日现金——支持全部 12 个面额。",
-      facts: { units: "90", scope: "3 家 AEON 购物中心", config: "支持 12 个面额" },
-      challenge: [
-        "AEON 三家金边购物中心每天打烊后，商户都握着现金却无处安全存放",
-        "普通的对私存款机不接受大部分面额",
-        "将营收从个人账户转入对公账户存在合规风险"
-      ],
-      solution: [
-        "每家购物中心设一间安全现金房，内置 10 台投款机",
-        "支持全部 12 个面额——收银员可随时存款，无需排队、无拒收",
-        "押运公司按固定周期为 ABA 取回并结算现金"
-      ],
-      result: [
-        "截至 2024 年 6 月，三家购物中心共部署 90 台投款机",
-        "自 2022 年底铺设以来运行稳定，获商户一致好评"
-      ]
+      intro: "面向 AEON 购物中心商户的安全打烊后现金存款。",
+      detail: "ABA 是柬埔寨最大的商业银行，与 Navitech 合作解决 AEON 三家金边购物中心的夜间现金管理难题——商户打烊后持有大量现金却缺乏安全的存款渠道，普通对私存款机又不接受大部分面额。Navitech 为每家购物中心部署安全现金房，内置 10 台支持全部 12 个面额的投款机，收银员可随时存款、无需排队。押运公司按固定周期上门收取并结算。目前已有 90 台设备在役，运行稳定可靠。"
     }
   },
   {
@@ -317,36 +290,12 @@ window.NAVITECH_CASES = [
     name: "AMK",
     country: "Cambodia",
     media: [],
-    intro: "Compact NT-200 deposit terminals at high-traffic microfinance cash points, so agents and merchants deposit takings without queuing for a teller.",
-    facts: { units: "25+", scope: "Cash points", config: "Compact / NT-200" },
-    challenge: [
-      "Agents and merchants queued for tellers to deposit daily takings",
-      "Branch deposit processing competed with teller service"
-    ],
-    solution: [
-      "Compact NT-200 terminals at high-traffic microfinance cash points",
-      "Agents and merchants deposit directly, without queuing"
-    ],
-    result: [
-      "Daily takings reconciled against branch records each cycle",
-      "Rollout staged in controlled batches with branch training"
-    ],
+    intro: "Compact NT-200 terminals at high-traffic microfinance cash points.",
+    detail: "Agents and merchants at AMK's high-traffic microfinance cash points previously queued for tellers to deposit daily takings. Compact NT-200 deposit terminals now allow them to deposit directly and without waiting, while counts are reconciled against branch records each cycle.",
     zh: {
       country: "柬埔寨",
-      intro: "在客流密集的小额信贷现金网点部署紧凑型 NT-200 存款终端，代理与商户无需排队即可存入营收。",
-      facts: { units: "25+", scope: "现金网点", config: "紧凑型 / NT-200" },
-      challenge: [
-        "代理与商户须排队等待柜员才能存入每日营收",
-        "分行存款处理与柜面服务相互挤占"
-      ],
-      solution: [
-        "在客流密集的小额信贷现金网点部署紧凑型 NT-200 终端",
-        "代理与商户无需排队即可直接存入营收"
-      ],
-      result: [
-        "每个周期内自动与分行记录对账",
-        "受控分批铺设并同步网点培训"
-      ]
+      intro: "在客流密集的小额信贷现金网点部署紧凑型 NT-200 终端。",
+      detail: "AMK 的代理与商户在客流密集的小额信贷现金网点，过去需要排队等待柜员办理存款。紧凑型 NT-200 投款终端现已支持直接存入每日营收、无需等待，计数在每个周期内自动与分行记录对账。"
     }
   },
   {
@@ -355,36 +304,12 @@ window.NAVITECH_CASES = [
     name: "BTI",
     country: "Cambodia",
     media: [],
-    intro: "Wall-mounted NT-500 deposit units on exterior branch envelopes, extending cash intake to after-hours operation with weatherized enclosures.",
-    facts: { units: "18", scope: "Sites", config: "TTW / NT-500" },
-    challenge: [
-      "Deposits limited to branch business hours",
-      "Exterior cash intake had to stay reliable in all weather"
-    ],
-    solution: [
-      "Through-the-wall NT-500 units on exterior branch envelopes",
-      "Weatherized enclosures protect the note path day and night"
-    ],
-    result: [
-      "Cash intake extended beyond business hours",
-      "Deposit results returned to treasury management in real time"
-    ],
+    intro: "Through-the-wall deposit units on exterior branch envelopes.",
+    detail: "Deposits at BTI's exterior branch envelopes were previously limited to business hours. Through-the-wall NT-500 deposit units, housed in weatherized enclosures, now extend cash intake around the clock, with deposit results returned to treasury management in real time.",
     zh: {
       country: "柬埔寨",
-      intro: "在分行外墙安装穿墙 NT-500 存款设备，配防风雨外壳，将现金受理延伸至营业时间之后。",
-      facts: { units: "18", scope: "站点", config: "穿墙 / NT-500" },
-      challenge: [
-        "存款仅限营业时间之内",
-        "外墙现金受理必须全天候可靠"
-      ],
-      solution: [
-        "在分行外墙安装穿墙式 NT-500 设备",
-        "防风雨外壳全天候保护纸币通道"
-      ],
-      result: [
-        "现金受理延伸至营业时间之外",
-        "存款结果实时返回零管系统"
-      ]
+      intro: "在分行外墙部署穿墙式存款设备。",
+      detail: "BTI 分行外墙的存款业务过去仅限营业时间之内。穿墙式 NT-500 存款设备配以防风雨外壳，将现金受理延伸至全天候，存款结果实时返回零管系统。"
     }
   },
   {
@@ -393,34 +318,12 @@ window.NAVITECH_CASES = [
     name: "PLB",
     country: "Cambodia",
     media: [],
-    intro: "High-throughput bulk sorters in the bank's cash processing center, automating note verification and cassette packing ahead of cash-in-transit collection.",
-    facts: { units: "6", scope: "Cash center", config: "Bulk / NT-700" },
-    challenge: [
-      "Note verification and cassette packing were manual ahead of CIT collection"
-    ],
-    solution: [
-      "High-throughput NT-700 bulk sorters in the cash processing center",
-      "Verification and cassette packing automated for the vault team"
-    ],
-    result: [
-      "Note verification completed ahead of CIT collection",
-      "Counts reconciled per servicing cycle"
-    ],
+    intro: "Bulk sorters in the bank's cash processing center.",
+    detail: "Note verification and cassette packing at PLB's cash processing center were previously performed manually ahead of cash-in-transit collection. NT-700 bulk sorters now automate both processes, ensuring verification is completed before CIT collection and counts are reconciled each servicing cycle.",
     zh: {
       country: "柬埔寨",
-      intro: "在银行现金处理中心部署高吞吐大宗分拣机，在 CIT 回收前自动完成验钞与钞箱打包。",
-      facts: { units: "6", scope: "现金中心", config: "大宗 / NT-700" },
-      challenge: [
-        "CIT 回收前的验钞与钞箱打包均依赖人工"
-      ],
-      solution: [
-        "在现金处理中心部署高吞吐 NT-700 大宗分拣机",
-        "验钞与钞箱打包实现自动化，服务金库团队"
-      ],
-      result: [
-        "CIT 回收前自动完成验钞",
-        "每个服务周期自动对账"
-      ]
+      intro: "在银行现金处理中心部署大宗分拣机。",
+      detail: "PLB 现金处理中心在 CIT 回收前的验钞与钞箱打包，过去完全依赖人工。NT-700 大宗分拣机现已实现两项流程的自动化，确保 CIT 回收前完成验钞，每个服务周期自动对账。"
     }
   }
 ];
