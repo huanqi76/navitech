@@ -1543,13 +1543,13 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-3);
   display: grid;
-  grid-template-columns: 6fr 6fr;
+  grid-template-columns: 7fr 5fr;
   animation: nv-rise var(--dur-base) var(--ease) both;
 }
 
 .modal__visual {
   aspect-ratio: 1 / 1;
-  max-height: 480px;
+  max-height: 560px;
   overflow: hidden;
   align-self: start;
   display: flex;
