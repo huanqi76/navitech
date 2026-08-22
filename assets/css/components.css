@@ -1148,9 +1148,10 @@
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 72%);
 }
 
-.banner__kiosk--1 { left: 2%;  height: 292px; z-index: 1; }
-.banner__kiosk--2 { left: 24%; height: 332px; z-index: 2; }
-.banner__kiosk--3 { left: 46%; height: 366px; z-index: 3; }
+.banner__kiosk--1 { left: 0%;  height: 280px; z-index: 1; }
+.banner__kiosk--2 { left: 16%; height: 310px; z-index: 2; }
+.banner__kiosk--3 { left: 32%; height: 340px; z-index: 3; }
+.banner__kiosk--4 { left: 56%; height: 370px; z-index: 4; }
 
 /* Milestone content (right) */
 .banner__content {
@@ -1243,6 +1244,7 @@
   .banner__kiosk--1 { height: 220px; }
   .banner__kiosk--2 { height: 250px; }
   .banner__kiosk--3 { height: 280px; }
+  .banner__kiosk--4 { height: 300px; }
 
   .home-about__inner {
     grid-template-columns: 1fr;
@@ -1319,6 +1321,7 @@
 .banner__kiosk--1 { animation-delay: 0.15s; }
 .banner__kiosk--2 { animation-delay: 0.3s; }
 .banner__kiosk--3 { animation-delay: 0.45s; }
+.banner__kiosk--4 { animation-delay: 0.6s; }
 
 .banner__kiosk img {
   transition: transform 0.4s var(--ease);
@@ -1546,6 +1549,9 @@
 
 .modal__visual {
   aspect-ratio: 1 / 1;
+  max-height: 480px;
+  overflow: hidden;
+  align-self: start;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1554,7 +1560,7 @@
 }
 
 .modal__visual img {
-  height: 100%;
+  max-height: 100%;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -1647,6 +1653,17 @@
   width: 8px;
   height: 8px;
   background: var(--blue-500);
+}
+
+.modal__feature-heading {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--vault-900);
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.modal__feature-heading:first-child {
+  margin-top: 0;
 }
 
 /* ---- Solutions responsive ---- */

@@ -35,7 +35,7 @@
       "footer.contact": "Contact",
       "footer.copy": "© {year} Navitech. All rights reserved.",
       "footer.placeholder": "Placeholder content. Figures and model data pending final engineering validation.",
-      "footer.addr": "No. 1000 Lujiazui Ring Road, Pudong New District, Shanghai, China. Serving financial institutions internationally.",
+      "footer.addr": "Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai",
 
       /* flags */
       "flag.spec": "Spec data placeholder",
@@ -43,12 +43,11 @@
       "flag.deploy": "Deployment figures pending confirmation",
 
       /* titles */
-      "title.home": "Navitech | Cash Deposit Systems for Banks",
-      "title.products": "Products | Navitech",
-      "title.solutions": "Solutions | Navitech",
+      "title.home": "Navitech",
+      "title.solutions": "Solutions",
       "title.clients": "Successful Cases",
-      "title.services": "Services | Navitech",
-      "title.contact": "Contact / Request a Quote | Navitech",
+      "title.services": "Services",
+      "title.contact": "Contact",
       "title.detail": "{name} | {series} | Navitech",
 
       /* home */
@@ -98,7 +97,7 @@
       /* solutions */
       "solutions.breadcrumb": "Solutions",
       "solutions.h1": "Solution Offerings",
-      "solutions.lede": "Deposit automation, secure safedoor access, and QR-based cash transactions, engineered and operated by one vendor.",
+      "solutions.lede": "We provide deposit automation, digital fingerprint e-lock, qr-based cash transaction.",
       "solutions.card.cta": "View details",
       "solutions.modal.kicker": "Solution",
       "solutions.modal.features": "Key features",
@@ -222,7 +221,7 @@
 
       /* contact */
       "contact.breadcrumb": "Contact",
-      "contact.h1": "Request a quote",
+      "contact.h1": "Contact",
       "form.institution": "Institution",
       "form.name": "Contact name",
       "form.role": "Role",
@@ -250,7 +249,7 @@
       "contact.aside.sales": "Sales and engineering",
       "contact.aside.sd": "Service desk (24/7)",
       "contact.aside.office": "Office",
-      "contact.aside.addr": "Phnom Penh, Cambodia<br>Serving international markets"
+      "contact.aside.addr": "Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai"
     },
 
     zh: {
@@ -277,7 +276,7 @@
       "footer.contact": "联系方式",
       "footer.copy": "© {year} Navitech 版权所有。",
       "footer.placeholder": "占位内容。数据与型号信息待最终工程确认。",
-      "footer.addr": "中国上海市浦东新区陆家嘴环路 1000 号，服务国际市场的金融机构。",
+      "footer.addr": "\u5355\u4F4D\u5730\u5740\uFF1A\u4E0A\u6D77\u5E02\u5F90\u6C47\u533A\u6F5D\u5B9D\u8DEF103\u53F749\u5E62203\u5BA4",
 
       /* flags */
       "flag.spec": "规格为占位数据",
@@ -285,12 +284,12 @@
       "flag.deploy": "部署数据待确认",
 
       /* titles */
-      "title.home": "Navitech | 银行现金存款系统",
-      "title.products": "产品 | Navitech",
-      "title.solutions": "解决方案 | Navitech",
+      "title.home": "Navitech",
+      "title.products": "产品",
+      "title.solutions": "解决方案",
       "title.clients": "成功案例",
-      "title.services": "服务 | Navitech",
-      "title.contact": "联系我们 / 获取报价 | Navitech",
+      "title.services": "服务",
+      "title.contact": "\u8054\u7CFB\u6211\u4EEC",
       "title.detail": "{name} | {series} | Navitech",
 
       /* home */
@@ -340,7 +339,7 @@
       /* solutions */
       "solutions.breadcrumb": "解决方案",
       "solutions.h1": "解决方案产品",
-      "solutions.lede": "存款自动化、安全门锁与二维码现金交易，由同一供应商研发与运营。",
+      "solutions.lede": "我们提供存款自动化、数字指纹电子锁、二维码现金交易。",
       "solutions.card.cta": "查看详情",
       "solutions.modal.kicker": "方案",
       "solutions.modal.features": "核心功能",
@@ -464,7 +463,7 @@
 
       /* contact */
       "contact.breadcrumb": "联系我们",
-      "contact.h1": "获取报价",
+      "contact.h1": "\u8054\u7CFB\u6211\u4EEC",
       "form.institution": "机构名称",
       "form.name": "联系人",
       "form.role": "职务",
@@ -488,11 +487,11 @@
       "form.err.email": "请输入有效的邮箱地址",
       "form.success.t": "已收到您的需求。",
       "form.success.d": "此为静态站占位。后续版本将表单对接您的服务端点，销售工程师将与您联系。",
-      "contact.aside.title": "直接联系",
-      "contact.aside.sales": "销售与工程",
-      "contact.aside.sd": "服务台（7×24）",
+      "contact.aside.title": "",
+      "contact.aside.sales": "",
+      "contact.aside.sd": "",
       "contact.aside.office": "办公室",
-      "contact.aside.addr": "柬埔寨金边<br>服务国际市场"
+      "contact.aside.addr": "单位地址：上海市徐汇区漕宝路103号49幢203室"
     }
   };
 

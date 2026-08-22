@@ -19,7 +19,6 @@
   var NAV_LINKS = [
     { href: "index.html", labelKey: "nav.home", page: "home" },
     { href: "solutions.html", labelKey: "nav.solutions", page: "solutions" },
-    { href: "successful_cases.html", labelKey: "nav.clients", page: "clients" },
     { href: "contact.html", labelKey: "nav.contact", page: "contact" }
   ];
 
@@ -137,14 +136,12 @@
             "<h4>" + t("footer.site") + "</h4>" +
             '<nav class="footer__links" aria-label="Footer">' +
               '<a href="solutions.html">' + t("nav.solutions") + "</a>" +
-              '<a href="successful_cases.html">' + t("nav.clients") + "</a>" +
               '<a href="contact.html">' + t("nav.contact") + "</a>" +
             "</nav>" +
           "</div>" +
           '<div class="footer__contact">' +
             "<h4>" + t("footer.contact") + "</h4>" +
             '<p class="text-mono">sales@navitech.cn</p>' +
-            '<p class="text-mono">+855 23 000 000</p>' +
             "<p>" + t("footer.addr") + "</p>" +
           "</div>" +
         "</div>" +
