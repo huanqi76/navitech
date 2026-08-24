@@ -9,15 +9,44 @@
 
   var I18N = window.I18N || null;
 
+  function t(key) {
+    if (I18N) return I18N.t(key);
+    if (key === "contact.copied") return "Copied";
+    if (key === "contact.copy") return "Copy";
+    return key === "form.err.required" ? "Required field" : "Enter a valid email address";
+  }
+
+  var copyBtn = document.getElementById("copy-email");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var value = copyBtn.getAttribute("data-copy") || "";
+      var hint = copyBtn.querySelector(".contact-card__hint");
+      var done = function () {
+        copyBtn.classList.add("is-copied");
+        if (hint) hint.textContent = t("contact.copied");
+        setTimeout(function () {
+          copyBtn.classList.remove("is-copied");
+          if (hint) hint.textContent = t("contact.copy");
+        }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(done, done);
+        return;
+      }
+      var ta = document.createElement("textarea");
+      ta.value = value;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(ta);
+      done();
+    });
+  }
+
   var form = document.getElementById("quote-form");
   if (!form) return;
 
   var success = document.getElementById("form-success");
-
-  function t(key) {
-    if (I18N) return I18N.t(key);
-    return key === "form.err.required" ? "Required field" : "Enter a valid email address";
-  }
 
   function setError(input, key) {
     var field = input.closest(".form-field");

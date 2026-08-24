@@ -84,11 +84,6 @@
     if (hero) {
       hero.innerHTML =
         '<div class="container page-hero__inner">' +
-          '<nav class="breadcrumb" aria-label="Breadcrumb">' +
-            '<a href="products.html">' + t("detail.breadcrumb") + "</a>" +
-            '<span class="breadcrumb__sep">/</span>' +
-            "<span>" + L(p, "series") + "</span>" +
-          "</nav>" +
           '<span class="flag flag--dark mb-4">' + t("flag.spec") + "</span>" +
           '<h1 class="mb-1">' + p.name + "</h1>" +
           '<p class="kicker mb-2">' + L(p, "series") + " · " + L(p, "typeLabel") + "</p>" +
@@ -185,7 +180,6 @@
     if (hero) {
       hero.innerHTML =
         '<div class="container page-hero__inner">' +
-          '<nav class="breadcrumb" aria-label="Breadcrumb"><a href="products.html">' + t("detail.breadcrumb") + '</a><span class="breadcrumb__sep">/</span><span>' + t("detail.notfound.h1") + "</span></nav>" +
           '<h1 class="mb-4">' + t("detail.notfound.h1") + "</h1>" +
           '<p class="lede">' + t("detail.notfound.p") + "</p>" +
         "</div>";

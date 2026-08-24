@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact / Request a Quote | Navitech</title>
-  <meta name="description" content="Request a quote for cash deposit machines and service contracts. Contact the Navitech sales and engineering team.">
+  <title>Contact | Navitech</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +18,26 @@
   <main>
     <section class="page-hero">
       <div class="container page-hero__inner">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><span data-i18n="contact.breadcrumb">Contact</span></nav>
         <h1 class="mb-1" data-i18n="contact.h1">Contact</h1>
       </div>
     </section>
 
     <section class="section section--paper">
       <div class="container">
-        <div class="home-about__inner">
-          <div>
-            <p class="text-mono" style="margin-top: 12px">sales@navitech.cn</p>
-            <p style="margin-top: 12px" data-i18n="contact.aside.addr">Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai</p>
-          </div>
+        <div class="contact-card">
+          <ul class="contact-card__list">
+            <li class="contact-card__row">
+              <span class="contact-card__label" data-i18n="contact.aside.sales">Sales &amp; engineering</span>
+              <button type="button" class="contact-card__copy" id="copy-email" data-copy="jiangxin_hu@aliyun.com">
+                <span class="text-mono">jiangxin_hu@aliyun.com</span>
+                <span class="contact-card__hint" data-i18n="contact.copy">Copy</span>
+              </button>
+            </li>
+            <li class="contact-card__row">
+              <span class="contact-card__label" data-i18n="contact.aside.office">Office</span>
+              <span class="contact-card__value" data-i18n="contact.aside.addr">Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

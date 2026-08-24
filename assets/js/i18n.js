@@ -19,7 +19,6 @@
       "nav.clients": "Cases",
       "nav.services": "Services",
       "nav.contact": "Contact",
-      "nav.cta": "Request a quote",
       "nav.lang": "中文",
       "nav.menu": "Menu",
       "brand.sub": "Cash Deposit Systems",
@@ -87,23 +86,22 @@
       "home.about.p2": "During this period, we have undertaken various large-scale software projects, such as the Shanghai Pudong Development Bank Multivendor software development (2019), Wincor Nixdorf CMDV4 WOSA/XFS development (2006), and ICBC Multivendor software development on Wincor/NCR/Diebold ATM/CRM (2005).",
 
       /* products catalog */
-      "products.breadcrumb": "Products",
       "products.h1": "Product catalog",
       "products.lede": "Deposit machines for the placements a bank network uses: branch lobbies, 24-hour wall envelopes, compact retail sites, and high-throughput cash centers. Filter by configuration, or open a unit for the full specification sheet.",
       "products.filter.all": "All models",
       "products.count": "Showing {count} of {total} units",
-      "products.cta.btn": "Request a quote",
 
       /* solutions */
-      "solutions.breadcrumb": "Solutions",
-      "solutions.h1": "Solution Offerings",
+      "solutions.back": "All Solutions",
+      "solutions.h1": "Solutions",
       "solutions.lede": "We provide deposit automation, digital fingerprint e-lock, qr-based cash transaction.",
       "solutions.card.cta": "View details",
-      "solutions.modal.kicker": "Solution",
-      "solutions.modal.features": "Key features",
+      "solutions.detail.overview": "Overview",
+      "solutions.detail.features": "Key features",
+      "solutions.notfound.h1": "Solution not found",
+      "solutions.notfound.p": "The requested solution could not be found in the current list.",
 
       /* product detail */
-      "detail.breadcrumb": "Products",
       "detail.photoNote": "Photo pending",
       "detail.overview.trail": "Designed for branch, retail, and through-the-wall placement, with tamper-protected note handling and full remote monitoring.",
       "fact.hopper": "Hopper",
@@ -168,7 +166,6 @@
       "deploy.meta.config": "Configuration",
 
       /* services */
-      "services.breadcrumb": "Services",
       "services.h1": "The service contract behind the machines",
       "services.lede": "Hardware uptime is an operations problem as much as an engineering one. Installation, preventive maintenance, 24/7 monitoring, and cash servicing are contracted together, with response and recovery targets in writing.",
       "services.s1.t": "Installation",
@@ -220,7 +217,6 @@
       "services.cta.btn": "Request a quote",
 
       /* contact */
-      "contact.breadcrumb": "Contact",
       "contact.h1": "Contact",
       "form.institution": "Institution",
       "form.name": "Contact name",
@@ -245,11 +241,11 @@
       "form.err.email": "Enter a valid email address",
       "form.success.t": "Request received.",
       "form.success.d": "This is a static-site placeholder. Connect the form to your endpoint in a later pass. A sales engineer will follow up.",
-      "contact.aside.title": "Direct contact",
-      "contact.aside.sales": "Sales and engineering",
-      "contact.aside.sd": "Service desk (24/7)",
+      "contact.aside.sales": "Email",
       "contact.aside.office": "Office",
-      "contact.aside.addr": "Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai"
+      "contact.aside.addr": "Room 203, Building 49, 103 CaoBao Rd, Xuhui District, Shanghai",
+      "contact.copy": "Copy",
+      "contact.copied": "Copied"
     },
 
     zh: {
@@ -260,7 +256,6 @@
       "nav.clients": "成功案例",
       "nav.services": "服务",
       "nav.contact": "联系我们",
-      "nav.cta": "获取报价",
       "nav.lang": "EN",
       "nav.menu": "菜单",
       "brand.sub": "现金存款系统",
@@ -325,27 +320,26 @@
       "home.banner.tagline": "银行或零售行业的现金处理解决方案提供商，包含硬件、软件、客户化",
       "home.about.kicker": "关于我们",
       "home.about.title": "创始团队",
-      "home.about.p1": "Navitech 的创始人是中国金融科技领域的专业人士，拥有超过 30 年从业经验，曾就职于 NCR、Wincor Nixdorf、Asino-Wincor 等全球及本土跨国企业。",
+      "home.about.p1": "Navitech 的创始人是金融科技领域的专业人士，拥有超过 30 年从业经验，曾就职于 NCR、Wincor Nixdorf、Asino-Wincor 等全球及本土跨国企业。",
       "home.about.p2": "在此期间，我们承担了多个大型软件项目，例如上海浦东发展银行多厂商软件开发（2019）、Wincor Nixdorf CMDV4 WOSA/XFS 开发（2006），以及工商银行基于 Wincor/NCR/Diebold ATM/CRM 的多厂商软件开发（2005）。",
 
       /* products catalog */
-      "products.breadcrumb": "产品",
       "products.h1": "产品目录",
       "products.lede": "覆盖银行网络实际所需的全部部署场景：分行大堂、24 小时外墙穿墙式、紧凑型零售网点，以及高吞吐现金中心。可按配置筛选，点开任意设备查看完整规格表。",
       "products.filter.all": "全部型号",
       "products.count": "共 {total} 款，当前显示 {count} 款",
-      "products.cta.btn": "获取报价",
 
       /* solutions */
-      "solutions.breadcrumb": "解决方案",
-      "solutions.h1": "解决方案产品",
+      "solutions.back": "全部解决方案",
+      "solutions.h1": "解决方案",
       "solutions.lede": "我们提供存款自动化、数字指纹电子锁、二维码现金交易。",
       "solutions.card.cta": "查看详情",
-      "solutions.modal.kicker": "方案",
-      "solutions.modal.features": "核心功能",
+      "solutions.detail.overview": "方案概述",
+      "solutions.detail.features": "核心功能",
+      "solutions.notfound.h1": "未找到该方案",
+      "solutions.notfound.p": "当前列表中未找到所请求的方案。",
 
       /* product detail */
-      "detail.breadcrumb": "产品",
       "detail.photoNote": "照片待上传",
       "detail.overview.trail": "适用于分行、零售网点与穿墙式安装，配备防破坏钞箱处理与完整的远程监控。",
       "fact.hopper": "进钞容量",
@@ -410,7 +404,6 @@
       "deploy.meta.config": "配置",
 
       /* services */
-      "services.breadcrumb": "服务",
       "services.h1": "设备背后的服务合同",
       "services.lede": "硬件可用率既是工程问题，也是运营问题。安装、预防性维护、7×24 监控与现金服务统一签约，并以书面形式约定响应与恢复目标。",
       "services.s1.t": "安装部署",
@@ -462,7 +455,6 @@
       "services.cta.btn": "获取报价",
 
       /* contact */
-      "contact.breadcrumb": "联系我们",
       "contact.h1": "\u8054\u7CFB\u6211\u4EEC",
       "form.institution": "机构名称",
       "form.name": "联系人",
@@ -487,11 +479,11 @@
       "form.err.email": "请输入有效的邮箱地址",
       "form.success.t": "已收到您的需求。",
       "form.success.d": "此为静态站占位。后续版本将表单对接您的服务端点，销售工程师将与您联系。",
-      "contact.aside.title": "",
-      "contact.aside.sales": "",
-      "contact.aside.sd": "",
+      "contact.aside.sales": "邮件",
       "contact.aside.office": "办公室",
-      "contact.aside.addr": "单位地址：上海市徐汇区漕宝路103号49幢203室"
+      "contact.aside.addr": "单位地址：上海市徐汇区漕宝路103号49幢203室",
+      "contact.copy": "复制",
+      "contact.copied": "已复制"
     }
   };
 

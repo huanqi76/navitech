@@ -95,13 +95,12 @@
         '<nav aria-label="Primary">' +
           '<ul class="nav__links">' + links + "</ul>" +
         "</nav>" +
-        '<a class="btn btn--primary nav__cta" href="contact.html">' + t("nav.cta") + "</a>" +
         '<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>' +
       "</div>"
     );
 
     var langBtn = buildLangButton();
-    inner.querySelector(".nav__cta").insertAdjacentElement("beforebegin", langBtn);
+    inner.querySelector(".nav__toggle").insertAdjacentElement("beforebegin", langBtn);
     wrap.appendChild(inner);
 
     var toggle = wrap.querySelector(".nav__toggle");
@@ -141,7 +140,7 @@
           "</div>" +
           '<div class="footer__contact">' +
             "<h4>" + t("footer.contact") + "</h4>" +
-            '<p class="text-mono">sales@navitech.cn</p>' +
+            '<p class="text-mono">jiangxin_hu@aliyun.com</p>' +
             "<p>" + t("footer.addr") + "</p>" +
           "</div>" +
         "</div>" +
